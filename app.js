@@ -2,6 +2,7 @@ let health = 100
 let hitCount = 0
 
 function slap() {
+  document.getElementById("slice-sound").play()
   health = health - 1;
   let lowerHealth = health
   console.log("slap", lowerHealth)
@@ -12,6 +13,7 @@ function slap() {
 }
 
 function punch() {
+  document.getElementById("shieldbash-sound").play()
   health = health - 2;
   let lowerHealth = health
   console.log("punch", lowerHealth)
@@ -22,6 +24,7 @@ function punch() {
 }
 
 function kick() {
+  document.getElementById("thrust-sound").play()
   health = health - 3;
   let lowerHealth = health
   console.log("kick", lowerHealth)
